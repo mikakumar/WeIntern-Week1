@@ -35,19 +35,21 @@ const Signup = () =>{
         <div className="signup-form">
         <form action="" onSubmit={sendRegisterDetails}>
             <div className="name-input">
-            <input type="text" className="input-box" onChange={data=>setFullname(data.target.value)}/>
+            <input type="text" className="input-box font-mark" placeholder="Full Name" onChange={data=>setFullname(data.target.value)}/>
             <i className="fi fi-rr-user input-icon"></i>
             </div>
             <div className="email-input">
-            <input type="email" className="input-box" onChange={data=>setEmail(data.target.value)} />
+            <input type="email" className="input-box font-mark"
+            placeholder="Email"
+            onChange={data=>setEmail(data.target.value)} />
             <i className="fi fi-rr-at input-icon"></i>
             </div>
             <div className="password-input">
             {
                 passwordVisible ? 
-                <input type="text" className="input-box" />
+                <input type="text" className="input-box font-mark" placeholder="Password" />
                 :
-                <input type="password" className="input-box" onChange={data=>setPassword(data.target.value)} />
+                <input type="password" className="input-box font-mark" placeholder="Password" onChange={data=>setPassword(data.target.value)} />
             }
             <i className="fi fi-ss-lock input-icon"></i>
             {

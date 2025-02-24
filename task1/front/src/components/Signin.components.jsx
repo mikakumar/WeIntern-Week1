@@ -35,19 +35,21 @@ const Signin = () =>{
         return <Navigate to={"/"}/>
     }
 
+ 
+
     return(
         <div className="signup-form">
         <form action="" onSubmit={sendLoginDetails}>
             <div className="email-input">
-            <input type="email" className="input-box" onChange={data=>setEmail(data.target.value)} />
+            <input type="email" className="input-box font-mark" placeholder="Email"  onChange={data=>setEmail(data.target.value)} />
             <i className="fi fi-rr-at input-icon"></i>
             </div>
             <div className="password-input" onChange={data=>setPassword(data.target.value)}>
             {
                 passwordVisible ? 
-                <input type="text" className="input-box" />
+                <input type="text" className="input-box font-mark" placeholder="Password"/>
                 :
-                <input type="password" className="input-box" />
+                <input type="password" className="input-box font-mark" placeholder="Password" />
             }
             <i className="fi fi-ss-lock input-icon"></i>
             {

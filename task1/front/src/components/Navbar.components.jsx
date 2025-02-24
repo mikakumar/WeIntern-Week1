@@ -30,7 +30,7 @@ const Navbar = () => {
         credentials: 'include',
         method: 'POST'
        });
-       setUsername(null); 
+       setUser(null); 
     }
 
     return(
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <Link to="/write" className="edit-button"  >
                     Write new post
                 </Link>
-                <a onClick={logout}>Sign out</a>
+                <a className="sign-out pointer-events-none" onClick={logout}>Sign out</a>
                 </>)}
             </div>
         </nav>
