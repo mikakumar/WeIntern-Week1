@@ -207,6 +207,7 @@ function Kanban() {
                     task={activeTask}
                     deleteTask={deleteTask}
                     updateTask={updateTask}
+                    mode="dark"
                     />
             )}
         </DragOverlay>,
@@ -269,6 +270,7 @@ function Kanban() {
                             task={activeTask}
                             deleteTask={deleteTask}
                             updateTask={updateTask}
+                            mode="light"
                             />
                     )}
                 </DragOverlay>,
