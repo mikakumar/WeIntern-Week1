@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-#Keys and the API good stuff
+# api keys
 .env 
