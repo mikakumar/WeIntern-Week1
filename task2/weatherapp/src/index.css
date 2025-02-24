@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Markazi+Text:wght@400..700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.container{
+  min-height: 100vh;
+  display: grid;
+  background-color: lavenderblush;
+}
